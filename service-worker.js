@@ -3,9 +3,8 @@ self.addEventListener('install', event => {
         caches.open('v1').then(cache => {
             return cache.addAll([
                 '/',
-                '/index.html',
-                '/styles.css',
-                '/app.js'
+                '/AD_Asssign/index.html',
+                '/AD_Asssign/styles.css',
             ]).catch(error => {
                 console.error('Failed to cache resources:', error);
             });
