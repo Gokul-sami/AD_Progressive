@@ -1,15 +1,18 @@
 self.addEventListener('install', event => {
     event.waitUntil(
-      caches.open('v1').then(cache => {
-        return cache.addAll([
-          '/',
-          '/index.html',
-          '/styles.css',
-          '/app.js'
-        ]);
-      })
+        caches.open('v1').then(cache => {
+            return cache.addAll([
+                '/',
+                '/index.html',
+                '/styles.css',
+                '/app.js'
+            ]).catch(error => {
+                console.error('Failed to cache resources:', error);
+            });
+        })
     );
-  });
+});
+
  
   self.addEventListener('fetch', event => {
     event.respondWith(
