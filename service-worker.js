@@ -3,15 +3,15 @@ self.addEventListener('install', event => {
         caches.open('v1').then(cache => {
             return cache.addAll([
                 '/',
-                '/index.html',
-                '/styles.css',
+                '/AD_Asssign/index.html',
+                '/AD_Asssign/style.html',
+                '/AD_Asssign/images',
             ]).catch(error => {
                 console.error('Failed to cache resources:', error);
             });
         })
     );
 });
-
  
   self.addEventListener('fetch', event => {
     event.respondWith(
