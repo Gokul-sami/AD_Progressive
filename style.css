@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+}
+
+.popular-songs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.popular-song-name {
+    color: white;
+}
+
+.popular-song-name, .popular-singer-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    word-wrap: normal;
+}
+
+.popular-singer-name {
+    color: rgb(152, 144, 144);
+}
+
+* {
+    color: #7827e7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cover {
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 10%;
+}
+
+.cover:hover, .popular-song-name:hover {
+    color: #7827e7;
+    border-color: #7827e7;
+}
