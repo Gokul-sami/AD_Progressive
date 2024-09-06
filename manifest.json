@@ -8,8 +8,16 @@
   "icons": [
     {
       "src": "images/tadow.jpg",
-      "sizes": "192x192",
-      "type": "images/jpg"
+      "sizes": "215x215",
+      "type": "image/jpeg"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/agora hills.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "label": "Screenshot 1"
     }
   ]
 }
