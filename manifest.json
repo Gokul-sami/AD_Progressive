@@ -9,15 +9,21 @@
     {
       "src": "images/tadow.jpg",
       "sizes": "215x215",
-      "type": "image/jpeg"
+      "type": "image/jpg"
     }
   ],
   "screenshots": [
     {
       "src": "images/agora hills.jpg",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
+      "sizes": "215x215",
+      "type": "image/jpg",
       "label": "Screenshot 1"
+    },
+    {
+      "src": "images/motley crew.jpg",
+      "sizes": "215x215",
+      "type": "image/jpg",
+      "label": "Screenshot 2"
     }
   ]
 }
