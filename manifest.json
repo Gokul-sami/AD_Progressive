@@ -14,14 +14,14 @@
   ],
   "screenshots": [
     {
-      "src": "images/agora hills.jpg",
-      "sizes": "215x215",
+      "src": "images/home.jpg",
+      "sizes": "1280x720",
       "type": "image/jpg",
       "label": "Screenshot 1"
     },
     {
-      "src": "images/motley crew.jpg",
-      "sizes": "215x215",
+      "src": "images/desert.jpg",
+      "sizes": "1364x1091",
       "type": "image/jpg",
       "label": "Screenshot 2"
     }
