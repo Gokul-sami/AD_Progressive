@@ -2,10 +2,10 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('v1').then(cache => {
             return cache.addAll([
-                '/AD_Assign/',
-                '/AD_Assign/index.html',
-                '/AD_Assign/style.css',
-                '/AD_Assign/images/tadow.jpg'
+                'https://gokul-sami.github.io/AD_Asssign/',
+                'https://gokul-sami.github.io/AD_Asssign/index.html',
+                'https://gokul-sami.github.io/AD_Asssign/style.css',
+                'https://gokul-sami.github.io/AD_Asssign/images/tadow.jpg'
             ]).catch(error => {
                 console.error('Failed to cache resources:', error);
             });
