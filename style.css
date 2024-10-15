@@ -1,7 +1,7 @@
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #7827e7;
+    color: #b84dff;
     margin: 0;
     padding: 0;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .cover:hover {
-    border-color: #7827e7;
+    border-color: #b84dff;
 }
 
 .popular-song-name, .popular-singer-name {
@@ -53,7 +53,7 @@ body {
 }
 
 .popular-song-name:hover {
-    color: #7827e7;
+    color: #b84dff;
 }
 
 .popular-singer-name {

@@ -24,11 +24,17 @@ self.addEventListener('fetch', event => {
     );
 });
 
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then(function(registration) {
-        console.log('Service Worker registered', registration);
-    }).catch(function(error) {
-        console.log('Service Worker registration failed', error);
-    });
-}
+self.addEventListener('activate', event => {
+    const cacheWhitelist = ['v1'];
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cacheName => {
+                    if (!cacheWhitelist.includes(cacheName)) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 2</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="./AD_Asssign/manifest.json">
-    <link rel="icon" href="./AD_Asssign/images/tadow.icon" type="image/jpg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 <body>
@@ -119,12 +119,12 @@
             <!-- 10 -->
             <div class="popular">
                 <a href="https://open.spotify.com/track/2FpWhUMOPGUVR95DkfKjGH">
-                    <img class="cover" src="./images/cold.jpg" alt="Cold">
+                    <img class="cover" src="./images/motley crew.jpg" alt="Cold">
                 </a>
                 <a href="https://open.spotify.com/track/2FpWhUMOPGUVR95DkfKjGH">
-                    <h3 class="popular-song-name">Cold</h3>
+                    <h3 class="popular-song-name">Motley Crew</h3>
                 </a>
-                <h4 class="popular-singer-name">Korn</h4>
+                <h4 class="popular-singer-name">Vince Neil</h4>
             </div>
         </div>
     </div>
@@ -132,6 +132,12 @@
     <button id="install-button" style="display: none;">Install App</button>
 
 <script>
+
+if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+}
+
+
     let deferredPrompt;
     const installButton = document.getElementById('install-button');
 
@@ -158,18 +164,6 @@
         });
     });
 });
-
-
-
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/AD_Asssign/service-worker.js', { scope: '/AD_Asssign/' })
-.then(registration => {
-    console.log('Service Worker registered with scope:', registration.scope);
-})
-.catch(error => {
-    console.error('Service Worker registration failed:', error);
-});
-}
 
 </script>
 
